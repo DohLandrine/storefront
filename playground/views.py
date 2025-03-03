@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def sayHello(request):
-    return HttpResponse("Hello, Django!")
+    return render(request, 'hello.html', {'name' : 'Doh'})
