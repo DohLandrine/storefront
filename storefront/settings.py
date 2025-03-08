@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.messages', # Displays one time notifications to users
     'django.contrib.staticfiles', # Serving static files, like CSS, JavaScript, and images
-    'playground'
+    'playground',
+    'store',
+    'tags'
 ]
+
 
 INTERNAL_IPS = [
     "127.0.0.1",
