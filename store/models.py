@@ -27,8 +27,8 @@ class Customer(models.Model):
     membership_silver = 'S'
     membership_gold = 'G'
     MEMBERSHIP_CHOICES = [
-        (membership_bronze, 'bronze')
-        (membership_silver, 'silver')
+        (membership_bronze, 'bronze'),
+        (membership_silver, 'silver'),
         (membership_gold, 'gold')
     ]
     membership = models.CharField(max_length = 1, choices = MEMBERSHIP_CHOICES, default = membership_bronze)
