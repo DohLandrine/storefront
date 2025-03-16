@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles', # Serving static files, like CSS, JavaScript, and images
     'playground',
     'store',
-    'tags'
+    'tags',
+    'likes'
 ]
 
 
