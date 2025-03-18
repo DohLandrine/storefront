@@ -28,7 +28,7 @@ class Customer(models.Model):
         indexes = [
             models.Index(fields = ['last_name', 'first_name'])
         ]
-
+ 
 
     # Choice Field
     membership_bronze = 'B'
