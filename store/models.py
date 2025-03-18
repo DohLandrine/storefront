@@ -23,6 +23,13 @@ class Customer(models.Model):
     phone = models.CharField(max_length = 255)
     birth_date = models.DateField(null = True)
 
+    class Meta:
+        db_table = 'store_customers'
+        indexes = [
+            models.Index(fields = ['last_name', 'first_name'])
+        ]
+
+
     # Choice Field
     membership_bronze = 'B'
     membership_silver = 'S'
